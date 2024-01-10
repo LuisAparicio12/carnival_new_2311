@@ -1,5 +1,6 @@
 class Ride 
     attr_reader :name, :min_height, :admission_fee, :excitement, :total_revenue, :rider_log
+    attr_writer :admission_fee
     def initialize(hash)
         @name = hash[:name]
         @min_height = hash[:min_height]
